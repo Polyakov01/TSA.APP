@@ -54,7 +54,7 @@ public class Operations extends HttpServlet
     private final String OPERATION_RELOCATE = "relocate";     
     private final String GET_OPERATION = "operation";      
    // private final String APP_CONSTANT.LOG_NAME = "TSA.APP.KZ";
-  
+  //Основные изменения здесь
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
