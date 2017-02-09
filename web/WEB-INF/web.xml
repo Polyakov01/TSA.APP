@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+    <display-name>TSA.APP.TEST</display-name>
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+    <servlet>
+        <servlet-name>Operations</servlet-name>
+        <servlet-class>servlet.Operations</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Operations</servlet-name>
+        <url-pattern>/Operations</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Tester</servlet-name>
+        <url-pattern>/Tester</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+  
+    <!--
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>/TSA.MOB.KZ</web-resource-name>
+            <url-pattern>/*</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>AppUsers</role-name>
+        </auth-constraint>
+    </security-constraint>
+    -->
+    <!--
+    <login-config>
+        <auth-method>BASIC</auth-method>
+        <realm-name>ApplicationRealm</realm-name>
+    </login-config>
+    -->
+</web-app>
